@@ -1,3 +1,4 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shitkov/cluster_analysis/blob/master/cluster_analysis_news.ipynb)
 # Cluster analysis based on RIA news headlines
 1. Create embeddings: LaBSE/USE/LASER.
 2. Create optimum clusters number with k-means and linear regression.

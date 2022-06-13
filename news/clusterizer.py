@@ -21,9 +21,12 @@ class Clusterizer:
         
     
     def predict(self, texts):
-        embeddings = self._get_embeddings(texts)
-        labels, centers = self._get_labels_centers(embeddings)
-        top_texts = self._get_top(texts, embeddings, labels, centers)
+        if len(texts) > 4:
+            embeddings = self._get_embeddings(texts)
+            labels, centers = self._get_labels_centers(embeddings)
+            top_texts = self._get_top(texts, embeddings, labels, centers)
+        else:
+            top_texts = texts
         return top_texts
     
     

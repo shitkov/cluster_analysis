@@ -2,4 +2,5 @@ numpy
 pandas
 sklearn
 torch
-transformers sentencepiece
+transformers
+sentencepiece

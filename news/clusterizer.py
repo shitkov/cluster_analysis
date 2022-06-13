@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
+import torch
 from transformers import AutoTokenizer, AutoModel
 
 from sklearn.cluster import KMeans

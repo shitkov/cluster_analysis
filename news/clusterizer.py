@@ -76,8 +76,8 @@ class Clusterizer:
             top_texts_list.append((top_texts[0], qnt_dict[i]))
         
         top_texts_list = sorted(top_texts_list, key=lambda x: x[1], reverse=True)
-        texts_list = list(zip(*top_texts_list))[0]
-        return list(texts_list)
+        # texts_list = list(zip(*top_texts_list))[0]
+        return top_texts_list
 
 
     def _elbow(self, k_min, clusters, metrics):
